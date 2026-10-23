@@ -97,3 +97,5 @@ Expected project URL: `https://brainbytescreative1.github.io/elementor-style-gui
 Reports stay in memory until downloaded; they are not uploaded to a service or saved in browser storage. The interface uses Google Fonts, and its preview requests detected Google font family names from Google Fonts. The target site loads its own normal resources in frames.
 
 Automated tests validate the generated ZIP structure, manifest/page paths, JSON encoding, native container nesting, global references, input handling, responsive style mapping, and optional SEO metadata. Browser QA checks the static interface and generated preview. A ZIP still needs a final import check on the destination WordPress installation; local contract tests do not substitute for that check.
+
+For rendered extraction checks during local development, open `/__test__/browser.html` and run its eight checks. A small [two-page collector fixture](examples/collector-demo/) is deployed with the app for an end-to-end collector check on a public origin; its pages are marked noindex. Neither fixture represents a production-site crawl.
