@@ -1,0 +1,16 @@
+{
+  "name": "elementor-style-guide",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A GitHub Pages tool that collects site-wide styles in your browser and exports an Elementor kit.",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "dev": "node scripts/dev.mjs",
+    "test": "node --test",
+    "check": "node --check src/app.js && node --check src/collector.js && node --check src/model.js && node --check src/robots.js && node --check src/elementor.js"
+  },
+  "engines": { "node": ">=22" },
+  "dependencies": { "fflate": "^0.8.2" },
+  "devDependencies": { "esbuild": "^0.25.0" }
+}

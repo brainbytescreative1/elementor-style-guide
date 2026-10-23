@@ -1,0 +1,25 @@
+<!doctype html><html lang="en"><meta charset="utf-8"><title>Style Kit browser checks</title><style>body{font:16px/1.6 system-ui;margin:40px;max-width:800px}button{font:inherit;padding:12px 24px;background:#2647d5;color:white;border:0;border-radius:8px}li{padding:5px}iframe{display:block;border:1px solid #ddd;margin-top:20px}</style><h1>Collector browser checks</h1><p>Exercises the production extractor against rendered same-origin frames at all three viewport widths.</p><button id="run">Run browser checks</button><ol id="results"></ol><script type="module">
+import {extractDocument} from './src/collector.js';
+const $=s=>document.querySelector(s);
+$('#run').onclick=async()=>{
+  $('#results').replaceChildren();let passed=0;const samples={};
+  const check=(condition,label)=>{const li=document.createElement('li');li.textContent=(condition?'PASS: ':'FAIL: ')+label;li.style.color=condition?'#187448':'#b21b37';$('#results').appendChild(li);if(condition)passed++;};
+  try {
+    for(const [name,width]of Object.entries({desktop:1440,tablet:768,mobile:390})){
+      const f=document.createElement('iframe');f.style.width=width+'px';f.style.height='400px';
+      const load=new Promise(resolve=>f.onload=resolve);
+      f.srcdoc=`<!doctype html><html><head><style>body{font:400 16px/1.5 Arial;color:rgb(26,46,59);background:white}h1{font:400 64px/1.2 Georgia}.hidden{display:none;font-size:99px}.layout{max-width:1140px}button{background:rgb(4,38,152);color:white;border:0;border-radius:24px;padding:12px 24px}.gradient{height:20px;background:linear-gradient(135deg,rgb(4,38,152),rgb(238,89,177));box-shadow:0 8px 32px rgba(238,89,176,.137)}@media(max-width:800px){h1{font-size:44px}}@media(max-width:480px){h1{font-size:32px}}</style></head><body><main class="layout"><h1>Heading</h1><h1 class="hidden">Hidden heading</h1><p>Public paragraph</p><button>Action</button><div class="gradient"></div><input value="DO-NOT-COLLECT-THIS"></main></body></html>`;
+      document.body.appendChild(f);await load;samples[name]=extractDocument(f.contentDocument,name);f.remove();
+    }
+    check(samples.desktop.typography.some(t=>t.role==='h1'&&t.size===64),'Desktop computed heading is 64px');
+    check(samples.tablet.typography.some(t=>t.role==='h1'&&t.size===44),'Tablet media query is measured at 44px');
+    check(samples.mobile.typography.some(t=>t.role==='h1'&&t.size===32),'Mobile media query is measured at 32px');
+    check(!samples.desktop.typography.some(t=>t.size===99),'Hidden elements are excluded');
+    check(samples.desktop.colors.some(c=>c.role==='button'&&c.value==='#042698'),'Action background is collected as a button color');
+    check(samples.desktop.gradients.length===1&&samples.desktop.shadows.length===1&&samples.desktop.radii.includes('24px'),'Gradients, shadows, and radii are captured');
+    check(!JSON.stringify(samples).includes('DO-NOT-COLLECT-THIS')&&!JSON.stringify(samples).includes('Public paragraph'),'Form entries and page body text are not serialized');
+    check(samples.desktop.widths.includes(1140),'Content width is measured from a rendered container');
+    const result=document.createElement('h2');result.id='summary';result.textContent=`${passed}/8 browser checks passed`;$('#results').after(result);
+  }catch(e){check(false,e.message);}
+};
+</script></html>

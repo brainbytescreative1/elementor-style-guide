@@ -1,0 +1,404 @@
+{
+  "version": 1,
+  "pages": [
+    {
+      "widths": [
+        1140
+      ],
+      "colors": [
+        {
+          "role": "button",
+          "count": 100,
+          "value": "#042698"
+        },
+        {
+          "role": "background",
+          "count": 96,
+          "value": "#E7128F"
+        },
+        {
+          "role": "text",
+          "count": 92,
+          "value": "#1A2E3B"
+        },
+        {
+          "role": "background",
+          "count": 88,
+          "value": "#EE59B1"
+        },
+        {
+          "role": "background",
+          "count": 84,
+          "value": "#FFFFFF"
+        },
+        {
+          "role": "background",
+          "count": 80,
+          "value": "#000000"
+        },
+        {
+          "role": "background",
+          "count": 76,
+          "value": "#F0F3F7"
+        },
+        {
+          "role": "background",
+          "count": 72,
+          "value": "#212529"
+        },
+        {
+          "role": "background",
+          "count": 68,
+          "value": "#0D6EFD"
+        },
+        {
+          "role": "background",
+          "count": 64,
+          "value": "#7DA392"
+        },
+        {
+          "role": "background",
+          "count": 60,
+          "value": "#618578"
+        },
+        {
+          "role": "background",
+          "count": 56,
+          "value": "#0A58CA"
+        },
+        {
+          "role": "background",
+          "count": 52,
+          "value": "#334F44"
+        },
+        {
+          "role": "background",
+          "count": 48,
+          "value": "#F5C842"
+        },
+        {
+          "role": "background",
+          "count": 44,
+          "value": "#DC3545"
+        },
+        {
+          "role": "background",
+          "count": 40,
+          "value": "#198754"
+        }
+      ],
+      "typography": [
+        {
+          "size": 64,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "h1"
+        },
+        {
+          "size": 48,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "h2"
+        },
+        {
+          "size": 45,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "h3"
+        },
+        {
+          "size": 32,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "h4"
+        },
+        {
+          "size": 24,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "h5"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "h6"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.5,
+          "family": "Montserrat",
+          "weight": "400",
+          "count": 20,
+          "color": "#1A2E3B",
+          "viewport": "desktop",
+          "role": "body"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.2,
+          "family": "Montserrat",
+          "weight": "600",
+          "count": 4,
+          "color": "#FFFFFF",
+          "viewport": "desktop",
+          "role": "button"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.5,
+          "family": "Montserrat",
+          "weight": "400",
+          "count": 8,
+          "color": "#0D6EFD",
+          "viewport": "desktop",
+          "role": "link"
+        },
+        {
+          "size": 64,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "h1"
+        },
+        {
+          "size": 48,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "h2"
+        },
+        {
+          "size": 45,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "h3"
+        },
+        {
+          "size": 32,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "h4"
+        },
+        {
+          "size": 24,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "h5"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "h6"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.5,
+          "family": "Montserrat",
+          "weight": "400",
+          "count": 20,
+          "color": "#1A2E3B",
+          "viewport": "tablet",
+          "role": "body"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.2,
+          "family": "Montserrat",
+          "weight": "600",
+          "count": 4,
+          "color": "#FFFFFF",
+          "viewport": "tablet",
+          "role": "button"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.5,
+          "family": "Montserrat",
+          "weight": "400",
+          "count": 8,
+          "color": "#0D6EFD",
+          "viewport": "tablet",
+          "role": "link"
+        },
+        {
+          "size": 64,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "h1"
+        },
+        {
+          "size": 48,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "h2"
+        },
+        {
+          "size": 45,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "h3"
+        },
+        {
+          "size": 32,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "h4"
+        },
+        {
+          "size": 24,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "h5"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.2,
+          "family": "Shadows Into Light Two",
+          "weight": "400",
+          "count": 3,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "h6"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.5,
+          "family": "Montserrat",
+          "weight": "400",
+          "count": 20,
+          "color": "#1A2E3B",
+          "viewport": "mobile",
+          "role": "body"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.2,
+          "family": "Montserrat",
+          "weight": "600",
+          "count": 4,
+          "color": "#FFFFFF",
+          "viewport": "mobile",
+          "role": "button"
+        },
+        {
+          "size": 16,
+          "lineHeight": 1.5,
+          "family": "Montserrat",
+          "weight": "400",
+          "count": 8,
+          "color": "#0D6EFD",
+          "viewport": "mobile",
+          "role": "link"
+        }
+      ],
+      "shadows": [
+        "0 8px 32px rgba(238,89,176,.137)",
+        "0 0 10px 0 rgba(24,23,24,.1)",
+        "5px 5px 24px -11px #444"
+      ],
+      "gradients": [
+        "linear-gradient(135deg, rgb(4, 38, 152) 0%, rgb(238, 89, 177) 100%)",
+        "linear-gradient(135deg, rgba(4, 38, 152, 0.158) 0%, rgba(231, 18, 142, 0.123) 100%)",
+        "linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.75) 100%)"
+      ],
+      "radii": [
+        "50px",
+        "20px",
+        "5px",
+        "4px",
+        "50%"
+      ],
+      "url": "https://aloha-orthodontics.com/",
+      "buttons": [
+        {
+          "color": "#FFFFFF",
+          "radius": 50,
+          "background": "#042698"
+        }
+      ],
+      "title": "Aloha reference values"
+    }
+  ],
+  "sourceUrl": "https://aloha-orthodontics.com/",
+  "siteName": "Aloha Orthodontics",
+  "coverage": {
+    "discovered": 1,
+    "cancelled": false,
+    "issues": [],
+    "limit": 1,
+    "complete": false,
+    "warnings": [
+      "Reference example from the approved Aloha styles; not a full-site crawl."
+    ]
+  },
+  "example": true,
+  "capturedAt": "2026-10-23T14:00:00Z"
+}
