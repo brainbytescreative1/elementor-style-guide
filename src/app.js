@@ -15,7 +15,7 @@ $('#prepare-form').addEventListener('submit',event=>{
   expected={session:crypto.randomUUID(),origin:new URL(url).origin,url};received='';
   const toolUrl=new URL('./',location.href).href;
   const config={toolUrl,session:expected.session,maxPages:Number($('#page-budget').value),responsive:$('#responsive').checked,delay:400};
-  const js=`(()=>{if(location.origin!==${JSON.stringify(expected.origin)}){alert('Run this bookmark on ${new URL(url).hostname}.');return;}const s=document.createElement('script');s.src=${JSON.stringify(new URL('collector.js',toolUrl).href)};s.dataset.esg=${JSON.stringify(JSON.stringify(config))};s.onerror=()=>alert('This site blocked the Style Kit collector script. Its security policy may prevent bookmarklet collection.');document.body.appendChild(s);})()`;
+  const js=`(()=>{if(location.origin!==${JSON.stringify(expected.origin)}){alert('Run this bookmark on ${new URL(url).hostname}.');return;}const s=document.createElement('script');s.src=${JSON.stringify(new URL('collector.js',toolUrl).href)}+'?v='+Date.now();s.dataset.esg=${JSON.stringify(JSON.stringify(config))};s.onerror=()=>alert('This site blocked the Style Kit collector script. Its security policy may prevent bookmarklet collection.');document.body.appendChild(s);})()`;
   $('#bookmarklet').href='javascript:'+encodeURIComponent(js);
   $('#connection-title').textContent=`Your ${new URL(url).hostname} collector is ready.`;
   $('#collection-progress').textContent='Waiting for the collector…';$('#connection').hidden=false;
